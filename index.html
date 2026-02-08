@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>365 Property Buyers | We Buy Houses For Cash In Arkansas | Sell My House Fast</title>
+    <meta name="description" content="We buy houses for cash in Arkansas. Get a fair cash offer in 24 hours. No fees, no commissions, no repairs needed. Close in as little as 7 days. Call (501) 365-1499.">
+    <meta name="keywords" content="we buy houses Arkansas, sell my house fast Arkansas, cash home buyers Arkansas, 365 Property Buyers">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --navy-900: #0b1a30;
+            --navy-800: #0f2440;
+            --navy-700: #153660;
+            --navy-600: #1d4e89;
+            --navy-500: #2968b0;
+            --red-600: #b91c2e;
+            --red-500: #d42a3e;
+            --red-400: #e8384f;
+            --cream: #faf8f5;
+            --warm-100: #f5f2ed;
+            --warm-200: #ebe6de;
+            --dark: #1a1a1a;
+            --text: #333;
+            --text-mid: #5a5a5a;
+            --text-light: #888;
+            --border: #e0dcd5;
+            --white: #fff;
+            --radius: 8px;
+            --radius-lg: 14px;
+        }
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body {
+            font-family: 'Plus Jakarta Sans', -apple-system, sans-serif;
+            color: var(--text);
+            line-height: 1.65;
+            background: var(--white);
+            overflow-x: hidden;
+            -webkit-font-smoothing: antialiased;
+        }
+        img { max-width: 100%; display: block; }
+        a { color: inherit; }
+        .container { max-width: 1400px; margin: 0 auto; padding: 0 16px; }
+
+        /* TOP BAR */
+        .topbar {
+            background: var(--navy-900);
+            color: rgba(255,255,255,0.7);
+            font-size: 0.82rem;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .topbar strong { color: #fff; font-weight: 700; }
+        .topbar a { color: var(--red-400); text-decoration: none; font-weight: 600; }
+        .topbar a:hover { text-decoration: underline; }
+
+        /* NAV */
+        .navbar {
+            background: var(--white);
+            padding: 16px 0;
+            border-bottom: 1px solid var(--border);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+        .nav-inner { display: flex; align-items: center; justify-content: space-between; }
+        .logo { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .logo-img { height: 70px; width: auto; }
+        .logo-text { font-size: 1.05rem; font-weight: 700; color: var(--dark); line-height: 1.2; }
+        .logo-text span { display: block; font-size: 0.68rem; font-weight: 500; color: var(--text-light); text-transform: uppercase; letter-spacing: 0.08em; }
+        .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
+        .nav-links a { text-decoration: none; font-size: 0.9rem; font-weight: 500; color: var(--text-mid); transition: color 0.2s; }
+        .nav-links a:hover { color: var(--dark); }
+        .nav-cta { background: var(--navy-800) !important; color: #fff !important; padding: 10px 20px !important; border-radius: 6px !important; font-weight: 600 !important; transition: background 0.2s !important; }
+        .nav-cta:hover { background: var(--navy-700) !important; }
+        .hamburger { display: none; background: none; border: none; cursor: pointer; width: 34px; height: 34px; flex-direction: column; justify-content: center; align-items: center; gap: 5px; }
+        .hamburger i { display: block; width: 22px; height: 2.5px; background: var(--dark); border-radius: 2px; }
+
+        /* HERO */
+        .hero {
+            background: var(--navy-900);
+            color: #fff;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('images/hero-houses.png') center/cover no-repeat;
+            opacity: 0.15;
+        }
+        .hero::after {
+            content: '';
+            position: absolute;
+            bottom: -2px; left: 0; right: 0;
+            height: 80px;
+            background: var(--white);
+            clip-path: polygon(0 100%, 100% 100%, 100% 0);
+        }
+        .hero-inner {
+            display: grid;
+            grid-template-columns: 1fr 400px;
+            gap: 64px;
+            align-items: center;
+            padding: 80px 40px 100px;
+            position: relative;
+            z-index: 2;
+        }
+        .hero-content { }
+        .hero-flag { display: inline-flex; align-items: center; gap: 10px; font-size: 0.8rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.12em; color: rgba(255,255,255,0.6); margin-bottom: 24px; }
+        .hero-flag .bar { width: 32px; height: 3px; background: var(--red-500); border-radius: 2px; }
+        .hero h1 { font-family: 'Instrument Serif', serif; font-size: 3.6rem; font-weight: 400; line-height: 1.08; margin-bottom: 20px; letter-spacing: -0.02em; }
+        .hero h1 em { font-style: italic; color: var(--red-400); }
+        .hero-sub { font-size: 1.05rem; line-height: 1.7; color: rgba(255,255,255,0.65); max-width: 480px; margin-bottom: 32px; }
+        .hero-stats { display: flex; gap: 40px; padding-top: 28px; border-top: 1px solid rgba(255,255,255,0.1); }
+        .hero-stat .num { font-family: 'Instrument Serif', serif; font-size: 2rem; color: #fff; line-height: 1; }
+        .hero-stat .label { font-size: 0.78rem; color: rgba(255,255,255,0.45); margin-top: 4px; font-weight: 500; }
+
+        /* FORM CARD */
+        .form-card { background: var(--white); border-radius: var(--radius-lg); padding: 36px 30px 30px; box-shadow: 0 24px 64px rgba(0,0,0,0.3); }
+        .form-header { text-align: center; margin-bottom: 24px; }
+        .form-header .tag { display: inline-block; background: var(--red-500); color: #fff; font-size: 0.7rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; padding: 5px 14px; border-radius: 4px; margin-bottom: 12px; }
+        .form-header h2 { font-family: 'Instrument Serif', serif; font-size: 1.6rem; color: var(--dark); font-weight: 400; }
+        .form-header p { font-size: 0.85rem; color: var(--text-light); margin-top: 4px; }
+        .lead-form .field { margin-bottom: 14px; }
+        .lead-form label { display: block; font-size: 0.76rem; font-weight: 700; color: var(--text); margin-bottom: 5px; text-transform: uppercase; letter-spacing: 0.06em; }
+        .lead-form input, .lead-form select { width: 100%; padding: 12px 14px; border: 1.5px solid var(--border); border-radius: 6px; font-size: 0.93rem; font-family: inherit; background: var(--cream); transition: border-color .2s, box-shadow .2s; }
+        .lead-form input:focus, .lead-form select:focus { outline: none; border-color: var(--navy-600); box-shadow: 0 0 0 3px rgba(29,78,137,0.1); background: #fff; }
+        .lead-form input::placeholder { color: #bbb; }
+        .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+        .btn-submit { width: 100%; padding: 16px; background: var(--red-500); color: #fff; border: none; border-radius: 6px; font-size: 1rem; font-weight: 700; font-family: inherit; cursor: pointer; text-transform: uppercase; letter-spacing: 0.04em; margin-top: 8px; transition: background .2s, transform .15s; }
+        .btn-submit:hover { background: var(--red-400); transform: translateY(-1px); }
+        .form-note { text-align: center; font-size: 0.74rem; color: var(--text-light); margin-top: 14px; }
+
+        /* TRUST BAR */
+        .trust-bar { background: var(--cream); border-bottom: 1px solid var(--border); padding: 40px 0; }
+        .trust-row { display: grid; grid-template-columns: repeat(6, 1fr); gap: 16px; text-align: center; }
+        .trust-item .val { font-family: 'Instrument Serif', serif; font-size: 1.5rem; color: var(--navy-700); line-height: 1.1; }
+        .trust-item .desc { font-size: 0.72rem; color: var(--text-light); font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-top: 4px; }
+
+        /* SECTIONS */
+        .section { padding: 88px 0; }
+        .section--cream { background: var(--cream); }
+        .section-eyebrow { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.16em; color: var(--red-500); margin-bottom: 12px; }
+        .section-eyebrow.center { text-align: center; }
+        .section-title { font-family: 'Instrument Serif', serif; font-size: 2.6rem; font-weight: 400; color: var(--dark); margin-bottom: 16px; line-height: 1.1; letter-spacing: -0.01em; }
+        .section-title.center { text-align: center; }
+        .section-sub { color: var(--text-mid); max-width: 560px; font-size: 1rem; }
+        .section-sub.center { text-align: center; margin: 0 auto; }
+        .section-head { margin-bottom: 56px; }
+
+        /* STEPS */
+        .steps-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 56px; }
+        .step-card { padding: 40px 32px; border: 1px solid var(--border); border-right: none; position: relative; }
+        .step-card:last-child { border-right: 1px solid var(--border); }
+        .step-card:first-child { border-radius: var(--radius) 0 0 var(--radius); }
+        .step-card:last-child { border-radius: 0 var(--radius) var(--radius) 0; }
+        .step-num { font-family: 'Instrument Serif', serif; font-size: 3.5rem; color: var(--warm-200); line-height: 1; margin-bottom: 16px; }
+        .step-card h3 { font-size: 1.05rem; font-weight: 700; color: var(--dark); margin-bottom: 10px; }
+        .step-card p { font-size: 0.9rem; color: var(--text-mid); line-height: 1.6; }
+
+        /* BENEFITS */
+        .benefits-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 56px; }
+        .benefit-card { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius); padding: 32px 26px; transition: border-color .2s, box-shadow .2s; }
+        .benefit-card:hover { border-color: var(--navy-600); box-shadow: 0 8px 24px rgba(0,0,0,0.06); }
+        .benefit-icon { width: 44px; height: 44px; border-radius: 8px; background: var(--cream); border: 1px solid var(--border); display: grid; place-items: center; margin-bottom: 18px; font-size: 1.15rem; }
+        .benefit-card h3 { font-size: 0.98rem; font-weight: 700; color: var(--dark); margin-bottom: 8px; }
+        .benefit-card p { font-size: 0.88rem; color: var(--text-mid); line-height: 1.6; }
+
+        /* ABOUT */
+        .about-grid { display: grid; grid-template-columns: 380px 1fr; gap: 64px; align-items: center; }
+        .about-photo {
+            aspect-ratio: 1/1;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+        }
+        .about-photo img { width: 100%; height: 100%; object-fit: cover; }
+        .vet-badge { display: inline-flex; align-items: center; gap: 8px; background: var(--navy-900); color: #fff; padding: 8px 16px; border-radius: 50px; font-size: 0.76rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 20px; }
+        .about-text h2 { font-family: 'Instrument Serif', serif; font-size: 2.2rem; font-weight: 400; color: var(--dark); margin-bottom: 20px; line-height: 1.15; }
+        .about-text p { color: var(--text-mid); margin-bottom: 16px; font-size: 0.93rem; line-height: 1.7; }
+
+        /* COMPARE TABLE */
+        .compare-wrap { max-width: 800px; margin: 48px auto 0; border: 1px solid var(--border); border-radius: var(--radius-lg); overflow: hidden; }
+        .compare-table { width: 100%; border-collapse: collapse; }
+        .compare-table thead { background: var(--navy-900); color: #fff; }
+        .compare-table th { padding: 18px 24px; text-align: left; font-weight: 600; font-size: 0.88rem; }
+        .compare-table th:nth-child(2) { color: var(--red-400); }
+        .compare-table td { padding: 14px 24px; font-size: 0.88rem; border-bottom: 1px solid var(--border); }
+        .compare-table tr:last-child td { border-bottom: none; }
+        .compare-table tbody tr { background: var(--white); }
+        .compare-table tbody tr:nth-child(even) { background: var(--cream); }
+        .cmp-yes { color: var(--navy-600); font-weight: 700; }
+        .cmp-no { color: var(--text-light); }
+
+        /* SITUATIONS */
+        .situations-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; margin-top: 56px; }
+        .situation-col h3 { font-family: 'Instrument Serif', serif; font-size: 1.3rem; font-weight: 400; color: var(--dark); margin-bottom: 16px; padding-bottom: 12px; border-bottom: 2px solid var(--navy-800); }
+        .situation-col ul { list-style: none; }
+        .situation-col li { padding: 10px 0; border-bottom: 1px solid var(--border); font-size: 0.88rem; color: var(--text-mid); display: flex; align-items: center; gap: 10px; }
+        .situation-col li::before { content: ''; width: 6px; height: 6px; background: var(--red-500); border-radius: 50%; flex-shrink: 0; }
+
+        /* INLINE FORM */
+        .inline-form-section { background: var(--white); border: 1px solid var(--border); border-radius: var(--radius-lg); padding: 44px; max-width: 580px; margin: 56px auto 0; }
+        .inline-form-section h3 { font-family: 'Instrument Serif', serif; font-size: 1.5rem; text-align: center; margin-bottom: 24px; color: var(--dark); }
+
+        /* FAQ */
+        .faq-list { max-width: 740px; margin: 48px auto 0; }
+        .faq-item { border-bottom: 1px solid var(--border); }
+        .faq-q { width: 100%; background: none; border: none; text-align: left; padding: 22px 40px 22px 0; font-size: 0.95rem; font-weight: 600; color: var(--dark); cursor: pointer; font-family: inherit; position: relative; line-height: 1.4; }
+        .faq-q::after { content: '+'; position: absolute; right: 0; top: 50%; transform: translateY(-50%); font-size: 1.3rem; color: var(--navy-600); font-weight: 300; }
+        .faq-q.open::after { content: '\2212'; }
+        .faq-a { max-height: 0; overflow: hidden; transition: max-height .35s ease, padding .35s ease; }
+        .faq-a.open { max-height: 400px; padding: 0 0 22px; }
+        .faq-a p { color: var(--text-mid); font-size: 0.9rem; line-height: 1.7; }
+
+        /* CTA BANNER */
+        .cta-banner { background: var(--navy-900); padding: 80px 0; text-align: center; color: #fff; position: relative; overflow: hidden; }
+        .cta-banner::before { content: ''; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 800px; height: 800px; background: radial-gradient(circle, rgba(212,42,62,0.08) 0%, transparent 60%); border-radius: 50%; }
+        .cta-banner .container { position: relative; z-index: 2; }
+        .cta-banner h2 { font-family: 'Instrument Serif', serif; font-size: 2.8rem; font-weight: 400; margin-bottom: 14px; }
+        .cta-banner p { font-size: 1.05rem; color: rgba(255,255,255,0.6); max-width: 500px; margin: 0 auto 36px; }
+        .cta-btns { display: flex; gap: 16px; justify-content: center; flex-wrap: wrap; }
+        .btn-primary { display: inline-flex; align-items: center; gap: 8px; background: var(--red-500); color: #fff; padding: 16px 36px; border-radius: 6px; font-weight: 700; font-size: 1rem; text-decoration: none; text-transform: uppercase; letter-spacing: 0.04em; transition: background .2s, transform .15s; }
+        .btn-primary:hover { background: var(--red-400); transform: translateY(-1px); }
+        .btn-secondary { display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.08); color: #fff; border: 1px solid rgba(255,255,255,0.2); padding: 16px 36px; border-radius: 6px; font-weight: 600; font-size: 1rem; text-decoration: none; transition: background .2s, border-color .2s; }
+        .btn-secondary:hover { background: rgba(255,255,255,0.12); border-color: rgba(255,255,255,0.4); }
+
+        /* SERVICE AREAS */
+        .areas-grid { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-top: 48px; }
+        .area-tag { background: var(--white); border: 1px solid var(--border); padding: 10px 20px; border-radius: 50px; font-size: 0.86rem; font-weight: 500; color: var(--text-mid); text-decoration: none; transition: border-color .2s, color .2s; }
+        .area-tag:hover { border-color: var(--navy-600); color: var(--navy-600); }
+
+        /* FOOTER */
+        .footer { background: var(--dark); color: rgba(255,255,255,0.5); padding: 48px 0 24px; }
+        .footer .logo-img { height: 70px; background: #fff; border-radius: 8px; padding: 6px 12px; }
+        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; margin-bottom: 40px; }
+        .footer-brand p { font-size: 0.86rem; line-height: 1.65; margin-top: 14px; max-width: 260px; }
+        .footer h4 { color: rgba(255,255,255,0.8); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.12em; margin-bottom: 16px; }
+        .footer a { display: block; color: rgba(255,255,255,0.5); text-decoration: none; font-size: 0.86rem; margin-bottom: 8px; transition: color .2s; }
+        .footer a:hover { color: #fff; }
+        .footer-bottom { border-top: 1px solid rgba(255,255,255,0.08); padding-top: 20px; display: flex; justify-content: space-between; font-size: 0.76rem; flex-wrap: wrap; gap: 10px; }
+
+        /* MOBILE */
+        @media (max-width: 960px) {
+            .hero-inner { grid-template-columns: 1fr; gap: 40px; padding: 60px 24px 80px; }
+            .hero h1 { font-size: 2.8rem; }
+            .hero::after { height: 50px; }
+            .form-card { max-width: 440px; }
+            .steps-grid { grid-template-columns: 1fr; }
+            .step-card { border-right: 1px solid var(--border); border-bottom: none; }
+            .step-card:last-child { border-bottom: 1px solid var(--border); }
+            .step-card:first-child { border-radius: var(--radius) var(--radius) 0 0; }
+            .step-card:last-child { border-radius: 0 0 var(--radius) var(--radius); }
+            .benefits-grid { grid-template-columns: 1fr 1fr; }
+            .about-grid { grid-template-columns: 1fr; gap: 40px; }
+            .about-photo { max-width: 320px; margin: 0 auto; aspect-ratio: 1/1; }
+            .situations-grid { grid-template-columns: 1fr; }
+            .footer-grid { grid-template-columns: 1fr 1fr; }
+            .trust-row { grid-template-columns: repeat(3, 1fr); }
+        }
+        @media (max-width: 640px) {
+            .nav-links { display: none; }
+            .hamburger { display: flex; }
+            .nav-links.show { display: flex; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: var(--white); padding: 20px 24px; box-shadow: 0 8px 24px rgba(0,0,0,0.08); gap: 16px; border-bottom: 1px solid var(--border); }
+            .hero h1 { font-size: 2.2rem; }
+            .hero-inner { padding: 48px 0 70px; }
+            .hero-stats { gap: 24px; flex-wrap: wrap; }
+            .section { padding: 64px 0; }
+            .section-title { font-size: 2rem; }
+            .benefits-grid { grid-template-columns: 1fr; }
+            .trust-row { grid-template-columns: repeat(2, 1fr); }
+            .field-row { grid-template-columns: 1fr; }
+            .inline-form-section { padding: 28px 20px; }
+            .cta-banner h2 { font-size: 2.1rem; }
+            .cta-banner { padding: 60px 0; }
+            .footer-grid { grid-template-columns: 1fr; }
+            .compare-table th, .compare-table td { padding: 12px 14px; font-size: .82rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="topbar">
+    <strong>Veteran Owned &amp; Operated</strong> &mdash; We buy houses in Arkansas for cash. Call us now: <a href="tel:5013651499">(501) 365-1499</a>
+</div>
+
+<nav class="navbar">
+    <div class="container nav-inner">
+        <a href="#" class="logo">
+            <img src="images/logo.png" alt="365 Property Buyers" class="logo-img">
+        </a>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="company.html">Our Company</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+            <li><a href="tel:5013651499" class="nav-cta">(501) 365-1499</a></li>
+        </ul>
+        <button class="hamburger" id="hamburger" aria-label="Menu"><i></i><i></i><i></i></button>
+    </div>
+</nav>
+
+<section class="hero">
+    <div class="container hero-inner">
+        <div class="hero-content">
+            <div class="hero-flag"><span class="bar"></span>Veteran Owned &middot; Cash Home Buyers<span class="bar"></span></div>
+            <h1>We Buy Houses<br>For Cash In <em>Arkansas</em></h1>
+            <p class="hero-sub">No repairs. No commissions. No hassle. Get a guaranteed cash offer for your home and close in as little as 7 days &mdash; or on your timeline.</p>
+            <div class="hero-stats">
+                <div class="hero-stat"><div class="num">Zero</div><div class="label">Fees or Commissions</div></div>
+                <div class="hero-stat"><div class="num">7 Days</div><div class="label">Fastest Closing</div></div>
+                <div class="hero-stat"><div class="num">24 Hrs</div><div class="label">Offer Turnaround</div></div>
+                <div class="hero-stat"><div class="num">As-Is</div><div class="label">No Repairs Needed</div></div>
+            </div>
+        </div>
+        <div class="form-card">
+            <div class="form-header">
+                <span class="tag">Cash Offer</span>
+                <h2>Get Your Free Offer Today</h2>
+                <p>No obligation. No pressure. Just a fair cash offer.</p>
+            </div>
+            <form class="lead-form" id="heroForm" action="https://formspree.io/f/xnjbqlkj" method="POST">
+    <input type="hidden" name="_next" value="https://www.365propertybuyers.com/thank-you.html">
+                <div class="field"><label>Property Address *</label><input type="text" name="address" placeholder="Street Address" required></div>
+                <div class="field field-row"><input type="text" name="city" placeholder="City" required><input type="text" name="zip" placeholder="ZIP Code" required></div>
+                <div class="field"><label>Phone *</label><input type="tel" name="phone" placeholder="(555) 123-4567" required></div>
+                <div class="field"><label>Email *</label><input type="email" name="email" placeholder="you@email.com" required></div>
+                <button type="submit" class="btn-submit">Get My Cash Offer &rarr;</button>
+                <p class="form-note"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Your info is 100% secure and never shared.</p>
+            </form>
+        </div>
+    </div>
+</section>
+
+<div class="trust-bar">
+    <div class="container">
+        <div class="trust-row">
+            <div class="trust-item"><div class="val">Zero</div><div class="desc">Fees or Commissions</div></div>
+            <div class="trust-item"><div class="val">7 Days</div><div class="desc">Fastest Closing</div></div>
+            <div class="trust-item"><div class="val">24 Hrs</div><div class="desc">Offer Turnaround</div></div>
+            <div class="trust-item"><div class="val">As-Is</div><div class="desc">No Repairs Needed</div></div>
+            <div class="trust-item"><div class="val">Veteran</div><div class="desc">Owned &amp; Operated</div></div>
+            <div class="trust-item"><div class="val">100%</div><div class="desc">Closing Costs Covered</div></div>
+        </div>
+    </div>
+</div>
+
+<section class="section" id="how-it-works">
+    <div class="container">
+        <div class="section-head" style="text-align:center;">
+            <p class="section-eyebrow center">Simple 3-Step Process</p>
+            <h2 class="section-title center">How It Works</h2>
+            <p class="section-sub center">Selling your Arkansas home has never been easier. No realtors, no showings, no waiting.</p>
+        </div>
+        <div class="steps-grid">
+            <div class="step-card"><div class="step-num">01</div><h3>Confirm Your Address</h3><p>Fill out our quick form or give us a call. We pull the Google Street View to confirm the location and get started.</p></div>
+            <div class="step-card"><div class="step-num">02</div><h3>Property Condition</h3><p>We buy homes as-is and handle all repairs &mdash; so you don't have to lift a finger or spend a dime.</p></div>
+            <div class="step-card"><div class="step-num">03</div><h3>Get Your Cash Offer</h3><p>Based on your info, we provide a fair cash offer &mdash; often within 24 hours. Close on your timeline.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--cream">
+    <div class="container">
+        <div class="section-head" style="text-align:center;">
+            <p class="section-eyebrow center">Why Choose Us</p>
+            <h2 class="section-title center">Sell My House Fast Arkansas</h2>
+            <p class="section-sub center">Here's what makes 365 Property Buyers the go-to choice for homeowners who need to sell quickly.</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card"><div class="benefit-icon">💰</div><h3>Fair Cash Offer</h3><p>Our local investors have a stellar track record of helping hundreds of homeowners sell fast with fair cash offers based on current market value.</p></div>
+            <div class="benefit-card"><div class="benefit-icon">⚡</div><h3>Fast Closing</h3><p>We'll make an offer and close the deal in as little as 7 days. No waiting on banks, no financing delays. Fast cash in your hands.</p></div>
+            <div class="benefit-card"><div class="benefit-icon">🔧</div><h3>No Repairs Required</h3><p>Score a speedy sale without lifting a paintbrush. As cash buyers, we handle all the repairs and cleaning needed.</p></div>
+            <div class="benefit-card"><div class="benefit-icon">🚫</div><h3>No Realtor Commissions</h3><p>The cash offer we make is the real deal &mdash; what you'll pocket at closing. We cover all closing costs. Zero extra fees.</p></div>
+            <div class="benefit-card"><div class="benefit-icon">📅</div><h3>You Pick Closing Date</h3><p>We work with you to set a closing date that fits your schedule. Whether you need 7 days or 3 months &mdash; your timeline, your terms.</p></div>
+            <div class="benefit-card"><div class="benefit-icon">✅</div><h3>Simple Process</h3><p>Our hassle-free selling process is the #1 reason sellers pick us. No listings, no showings, no headaches. Just a quick and easy sale.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="about">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-photo">
+                <img src="images/joey-headshot.png" alt="Joey Deskin - Owner of 365 Property Buyers">
+            </div>
+            <div class="about-text">
+                <div class="vet-badge">&#127894; U.S. Air Force Veteran</div>
+                <h2>Nice to meet you!<br>I'm Joey.</h2>
+                <p>Welcome to the world of fast, fuss-free house selling! We know that selling your house can be an emotional roller coaster, but we're here to make it as easy as a Sunday morning.</p>
+                <p>I completed my undergraduate degree in Finance and discovered my love for real estate. I earned my graduate certificate in Real Estate from Harvard Extension School, and recently completed my Master of Finance in Personal Financial Planning from Texas Tech University.</p>
+                <p>We're cash home buyers in Arkansas, and we've got a knack for dishing out cash offers so you can ditch the drama of a traditional home sale. No more hunting for a realtor, fixing up the place, or dealing with open houses and commissions.</p>
+                <a href="#heroForm" class="btn-primary" style="margin-top:24px;">Get Your Cash Offer &rarr;</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="section section--cream">
+    <div class="container">
+        <div class="section-head" style="text-align:center;">
+            <p class="section-eyebrow center">See The Difference</p>
+            <h2 class="section-title center">Selling With Us vs. a Realtor</h2>
+            <p class="section-sub center">Why deal with months of uncertainty when you can sell on your terms?</p>
+        </div>
+        <div class="compare-wrap">
+            <table class="compare-table">
+                <thead><tr><th></th><th>365 Property Buyers</th><th>Traditional Realtor</th></tr></thead>
+                <tbody>
+                    <tr><td>Commissions / Fees</td><td class="cmp-yes">None &mdash; $0</td><td class="cmp-no">6&ndash;7% commission</td></tr>
+                    <tr><td>Closing Costs</td><td class="cmp-yes">We pay them all</td><td class="cmp-no">2&ndash;3% seller pays</td></tr>
+                    <tr><td>Closing Timeline</td><td class="cmp-yes">7&ndash;28 days</td><td class="cmp-no">60&ndash;90+ days</td></tr>
+                    <tr><td>Home Repairs</td><td class="cmp-yes">None &mdash; sell as-is</td><td class="cmp-no">Buyers demand repairs</td></tr>
+                    <tr><td>Showings Required</td><td class="cmp-yes">Zero showings</td><td class="cmp-no">20&ndash;30 showings typical</td></tr>
+                    <tr><td>Financing Fall-Through</td><td class="cmp-yes">No risk &mdash; we pay cash</td><td class="cmp-no">Buyers often lose loan</td></tr>
+                    <tr><td>Appraisal Required</td><td class="cmp-yes">Not required</td><td class="cmp-no">Required by lender</td></tr>
+                    <tr><td>Time on Market</td><td class="cmp-yes">Immediate offer</td><td class="cmp-no">6&ndash;12 months average</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head" style="text-align:center;">
+            <p class="section-eyebrow center">We Can Help</p>
+            <h2 class="section-title center">I Need To Sell My House Fast</h2>
+            <p class="section-sub center">Whatever your situation, we've got your back. We buy houses in any condition, for any reason.</p>
+        </div>
+        <div class="situations-grid">
+            <div class="situation-col"><h3>Any Challenge</h3><ul><li>Expired Listing</li><li>Bankruptcy</li><li>Behind on Payments</li><li>Foreclosure</li><li>Problem Tenants</li><li>Job Transfer</li><li>Code Violations</li></ul></div>
+            <div class="situation-col"><h3>Any Reason</h3><ul><li>Relocating</li><li>Probate</li><li>Tax Lien</li><li>Inherited Home</li><li>Avoiding Upgrades</li><li>Health Issues</li><li>Title Issues</li></ul></div>
+            <div class="situation-col"><h3>Any Condition</h3><ul><li>Vacant Home</li><li>Mold Damage</li><li>Hoarder Home</li><li>Termite Damage</li><li>Divorce</li><li>Fire Damage</li><li>Storm Damage</li></ul></div>
+        </div>
+        <div class="inline-form-section">
+            <h3>Get Your Cash Offer Now</h3>
+            <form class="lead-form" action="https://formspree.io/f/xnjbqlkj" method="POST">
+    <input type="hidden" name="_next" value="https://www.365propertybuyers.com/thank-you.html">
+                <div class="field"><label>Property Address *</label><input type="text" name="address" placeholder="Street Address" required></div>
+                <div class="field field-row"><input type="text" name="city" placeholder="City" required><input type="text" name="zip" placeholder="ZIP Code" required></div>
+                <div class="field"><label>Phone *</label><input type="tel" name="phone" placeholder="(555) 123-4567" required></div>
+                <div class="field"><label>Email *</label><input type="email" name="email" placeholder="you@email.com" required></div>
+                <button type="submit" class="btn-submit">Get My Cash Offer &rarr;</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<section class="section section--cream" id="reviews">
+    <div class="container">
+        <div class="section-head" style="text-align:center;">
+            <p class="section-eyebrow center">Trust &amp; Transparency</p>
+            <h2 class="section-title center">Are "We Buy Houses" Companies Legit?</h2>
+            <p class="section-sub center">Great question &mdash; and vetting your buyer is crucial. Here's what makes us different.</p>
+        </div>
+        <div class="benefits-grid">
+            <div class="benefit-card"><div class="benefit-icon">&#128269;</div><h3>Transparent Offers</h3><p>We make transparent offers with the intention of actually closing the sale. No games, no bait-and-switch tactics.</p></div>
+            <div class="benefit-card"><div class="benefit-icon">&#128203;</div><h3>Proven Track Record</h3><p>Ask for proof of past deals. We've helped hundreds of homeowners and have the track record to prove it.</p></div>
+            <div class="benefit-card"><div class="benefit-icon">&#129309;</div><h3>No Hidden Fees</h3><p>When we make an offer, that's the exact amount you'll get at closing. We cover all fees including closing costs.</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="section" id="faq">
+    <div class="container">
+        <div class="section-head" style="text-align:center;">
+            <p class="section-eyebrow center">Common Questions</p>
+            <h2 class="section-title center">Sell My House Fast Arkansas FAQ</h2>
+            <p class="section-sub center">Everything you need to know about selling your home for cash.</p>
+        </div>
+        <div class="faq-list">
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">How can I sell my Arkansas house fast?</button><div class="faq-a"><p>Work with a cash home buyer like 365 Property Buyers. Our streamlined process eliminates the need for traditional financing, open houses, and lengthy negotiations. Simply contact us with details about your property, and we'll provide you with a no-obligation cash offer within 24 hours.</p></div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Is selling my house in one day possible?</button><div class="faq-a"><p>While it's unlikely to close in just one day, we can provide a cash offer within 24 hours. Once you accept, we can close in as little as 7&ndash;14 days &mdash; far faster than the traditional 60&ndash;90 day timeline.</p></div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do cash buyers pay all fees including closing costs?</button><div class="faq-a"><p>Yes! At 365 Property Buyers, we cover all the fees including closing costs. When we make an offer to buy your house, that's the exact money you'll get at closing &mdash; no surprises, no hidden fees.</p></div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Do "We Buy Houses" companies really buy ugly houses?</button><div class="faq-a"><p>Absolutely. We love fixer-uppers. No roof? No problem. We buy houses in any condition &mdash; as-is. It saves you the time and money of making repairs before selling.</p></div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Does a cash buyer provide a faster selling process?</button><div class="faq-a"><p>Yes! Since cash buyers don't rely on mortgage financing, we bypass many delays associated with bank approvals. We also purchase properties as-is, eliminating time-consuming repairs and inspections.</p></div></div>
+            <div class="faq-item"><button class="faq-q" onclick="toggleFaq(this)">Are "We Buy Houses" companies legitimate?</button><div class="faq-a"><p>Many are legitimate, including 365 Property Buyers. Always check a company's reputation, reviews, and track record. Look for transparent communication, fair cash offers, no hidden fees, and proof of past deals.</p></div></div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-banner">
+    <div class="container">
+        <h2>Ready to Sell Your House?</h2>
+        <p>Get a fair, no-obligation cash offer today. Nothing to lose &mdash; everything to gain.</p>
+        <div class="cta-btns">
+            <a href="#heroForm" class="btn-primary">Get My Cash Offer &rarr;</a>
+            <a href="tel:5013651499" class="btn-secondary">&#128222; Call (501) 365-1499</a>
+        </div>
+    </div>
+</section>
+
+<section class="section">
+    <div class="container">
+        <div class="section-head" style="text-align:center;">
+            <p class="section-eyebrow center">Where We Buy</p>
+            <h2 class="section-title center">We Buy Houses Across Arkansas</h2>
+            <p class="section-sub center">Our network of local buyers spans the state. We team up with local title companies to ensure smooth transactions.</p>
+        </div>
+        <div class="areas-grid">
+            <a href="sell-house-fast-little-rock-ar.html" class="area-tag">Little Rock</a>
+            <a href="sell-house-fast-conway-ar.html" class="area-tag">Conway</a>
+            <a href="sell-house-fast-jonesboro-ar.html" class="area-tag">Jonesboro</a>
+            <a href="sell-house-fast-fort-smith-ar.html" class="area-tag">Fort Smith</a>
+            <a href="sell-house-fast-fayetteville-ar.html" class="area-tag">Fayetteville</a>
+            <a href="sell-house-fast-searcy-ar.html" class="area-tag">Searcy</a>
+            <a href="sell-house-fast-cabot-ar.html" class="area-tag">Cabot</a>
+            <a href="sell-house-fast-north-little-rock-ar.html" class="area-tag">North Little Rock</a>
+            <span class="area-tag">Pine Bluff</span>
+            <a href="sell-house-fast-springdale-ar.html" class="area-tag">Springdale</a>
+            <span class="area-tag">Rogers</span>
+            <a href="sell-house-fast-bentonville-ar.html" class="area-tag">Bentonville</a>
+            <span class="area-tag">Hot Springs</span>
+            <span class="area-tag">Texarkana</span>
+            <span class="area-tag">And More...</span>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo" style="text-decoration:none;">
+                    <img src="images/logo.png" alt="365 Property Buyers" class="logo-img">
+                </a>
+                <p>We buy houses for cash in Arkansas. Veteran owned and operated. Get a fair, no-obligation cash offer today.</p>
+            </div>
+            <div><h4>Quick Links</h4><a href="#how-it-works">How It Works</a><a href="about.html">About Us</a><a href="company.html">Our Company</a><a href="reviews.html">Reviews</a></div>
+            <div><h4>Contact</h4><a href="tel:5013651499">&#128222; (501) 365-1499</a><a href="sms:5013651499">&#128172; Text (501) 365-1499</a><a href="/cdn-cgi/l/email-protection#87ede8e2fec7b4b1b2f7f5e8f7e2f5f3fee5f2fee2f5f4a9e4e8ea">&#9993;&#65039; Email Us</a></div>
+            <div><h4>We Buy Houses In</h4><a href="sell-house-fast-little-rock-ar.html">Little Rock, AR</a><a href="sell-house-fast-conway-ar.html">Conway, AR</a><a href="sell-house-fast-jonesboro-ar.html">Jonesboro, AR</a><a href="sell-house-fast-fort-smith-ar.html">Fort Smith, AR</a><a href="sell-house-fast-fayetteville-ar.html">Fayetteville, AR</a><a href="sell-house-fast-cabot-ar.html">Cabot, AR</a></div>
+        </div>
+        <div class="footer-bottom">
+            <span>&copy; 2026 365 Property Buyers. All rights reserved.</span>
+            <span>Veteran Owned &amp; Operated &#127482;&#127480;</span>
+        </div>
+    </div>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('show');
+});
+function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.faq-q').forEach(q => q.classList.remove('open'));
+    document.querySelectorAll('.faq-a').forEach(a => a.clas
