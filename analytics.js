@@ -2,13 +2,6 @@
 (function () {
   'use strict';
   var id = 'G-272L723EYL';
-  window['ga-disable-' + id] = false;
-  try {
-    if (localStorage.getItem('365pb_analytics_disabled') === 'true') {
-      window['ga-disable-' + id] = true;
-      return;
-    }
-  } catch (e) { /* Measurement still works when storage is unavailable. */ }
   if (navigator.doNotTrack === '1' || window.doNotTrack === '1') return;
   if (window.__propertyBuyersAnalyticsLoaded) return;
   window.__propertyBuyersAnalyticsLoaded = true;

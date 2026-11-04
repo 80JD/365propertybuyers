@@ -8,13 +8,6 @@
 <h2>Information you send us</h2><p>When you submit a property inquiry, we receive the contact and property information you provide so we can respond. Website forms currently use Formspree to deliver inquiries. Please do not enter Social Security numbers, bank details or other sensitive documents into website forms.</p>
 <h2>Website traffic measurement</h2><p>We use Google Analytics to understand which pages people visit and whether visits come from places such as our Google Business Profile. Google Analytics uses cookies and receives browser and device information, page visits and traffic-source information. We do not send your inquiry form contents, name, email, phone number or property address as analytics fields. Advertising personalization and Google Signals are disabled in our website tag.</p>
 <p>Read <a href="https://policies.google.com/privacy">Google's Privacy Policy</a> and <a href="https://policies.google.com/technologies/partner-sites">how Google uses information from sites that use its services</a>. Learn about <a href="https://formspree.io/legal/privacy-policy/">Formspree's privacy practices</a>.</p>
-<h2>Your analytics choice</h2><p>You can turn off analytics for this browser. This choice does not affect submitting an inquiry. The website also respects the browser's Do Not Track setting. Your preference is saved in this browser's local storage; clearing browser storage resets it.</p>
-<p id="analytics-status" role="status"></p><button id="analytics-choice" type="button">Turn off analytics</button>
+<p>Browser privacy settings and Google's analytics controls may limit measurement. This website respects the browser's Do Not Track setting.</p>
 <p>For privacy questions, email <a href="mailto:joey@365propertybuyers.com">joey@365propertybuyers.com</a>.</p>
-<script>
-(function(){var disabled=false;try{disabled=localStorage.getItem('365pb_analytics_disabled')==='true';}catch(e){}
-var button=document.getElementById('analytics-choice');var status=document.getElementById('analytics-status');
-function render(){button.textContent=disabled?'Turn on analytics':'Turn off analytics';status.textContent=disabled?'Analytics is turned off for this browser.':'Analytics is enabled unless blocked by your browser or Do Not Track setting.';}
-render();button.addEventListener('click',function(){try{localStorage.setItem('365pb_analytics_disabled',String(!disabled));disabled=!disabled;window['ga-disable-G-272L723EYL']=disabled;render();if(!disabled)window.location.reload();}catch(e){status.textContent='Your browser could not save this preference. You can block analytics with your browser privacy settings.';}});
-}());
-</script></body></html>
+</body></html>
